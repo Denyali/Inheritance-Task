@@ -10,5 +10,11 @@ namespace inheritance
     {
         public string StudentId { get; set; }
         public string Email { get; set; }
+
+        public Student(string name, int age, string id, string email) : base(name, age)
+        {
+            StudentId = id;
+            Email = email;
+        }
     }
 }
